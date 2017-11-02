@@ -19,7 +19,6 @@ public class PositionSize extends AppCompatActivity {
 
  accountSizeEditText.getText();
 
-
     }
 
     @Override
