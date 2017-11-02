@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TradersDiary</string>
+    <string name="posistion_size">Position size</string>
+    <string name="position_note">Position note</string>
+    <string name="observation">Observation</string>
+    <string name="account_size">Account size</string>
+    <string name="risk">Your risk in %</string>
+</resources>

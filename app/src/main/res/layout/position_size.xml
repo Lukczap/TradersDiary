@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tradersdiary.lukapplication.tradersdiary.PositionSize">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <EditText
+            android:id="@+id/accountSizeEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:width="150dp"
+            android:ems="10"
+            android:hint="@string/account_size"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/riskEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/accountSizeEditText"
+            android:layout_marginTop="14dp"
+            android:width="150dp"
+            android:ems="10"
+            android:hint="@string/risk"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/riskEditText"
+            android:gravity="center_horizontal">
+            <View
+                android:layout_height="2dp"
+                android:layout_width="100dp"
+                android:background="#000"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:text="%" />
+
+            <View
+                android:layout_height="2dp"
+                android:layout_width="100dp"
+                android:background="#000"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/riskEditText"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="14dp"
+            android:text="Rational Stop Loss (SL)" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="23dp"
+            android:text="ATR (13)" />
+
+        <EditText
+            android:id="@+id/atrEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:width="100dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/slTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/atrEditText"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="35dp"
+            android:text="Your SL (in ticks)" />
+
+        <TextView
+            android:id="@+id/viewSlTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/slTextView"
+            android:layout_toEndOf="@+id/riskEditText" />
+
+        <TextView
+            android:id="@+id/valueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/slTextView"
+            android:layout_marginTop="27dp"
+            android:text="Value of 1 tic" />
+
+        <EditText
+            android:id="@+id/valueOfTickEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/slTextView"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@+id/valueTextView"
+            android:width="100dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/valueTextView"
+            android:layout_below="@+id/valueOfTickEditText"
+            android:layout_marginTop="43dp"
+            android:text="Your position size" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView7"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView8"
+            android:layout_marginStart="34dp"
+            android:layout_toEndOf="@+id/valueOfTickEditText"
+            android:text="contracts" />
+
+        <Button
+            android:id="@+id/calculatingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:onClick="calculating"
+            android:text="calculating" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
