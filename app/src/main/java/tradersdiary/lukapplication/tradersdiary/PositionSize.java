@@ -17,7 +17,7 @@ public class PositionSize extends AppCompatActivity {
 
     private void calculating(View view){
 
-
+accountSizeEditText.getText();
 
     }
 
