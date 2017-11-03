@@ -7,8 +7,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 public class PositionSize extends AppCompatActivity {
 
     EditText accountSizeEditText;
@@ -35,9 +33,6 @@ public class PositionSize extends AppCompatActivity {
         calculatingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-
                 try {
 
                     String account = accountSizeEditText.getText().toString();
