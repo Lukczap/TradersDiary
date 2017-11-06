@@ -40,10 +40,12 @@ public class PositionSize extends AppCompatActivity {
                     String atr = atrEditText.getText().toString();
                     String tickValue = valueOfTickEditText.getText().toString();
 
-                    double calculate = Double.parseDouble(account) * (Double.parseDouble(risk) * 0.01);
+                    double calculate = (Double.parseDouble(account) * (Double.parseDouble(risk) * 0.01))/(Double.parseDouble(atr)*2);
                     double tickResult = Double.parseDouble(atr) * 2;
 
-                    textView8.setText(String.valueOf(calculate));
+                    textView8.setText(String.valueOf(Math.round(calculate)));
+                    stopTextView.setText(String.valueOf(tickResult));
+
 
                 } catch (Exception e){
                 }

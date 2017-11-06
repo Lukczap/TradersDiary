@@ -10,7 +10,8 @@
         android:layout_width="368dp"
         android:layout_height="495dp"
         tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp">
+        tools:layout_editor_absoluteX="8dp"
+        tools:ignore="MissingConstraints">
 
         <EditText
             android:id="@+id/accountSizeEditText"
@@ -52,7 +53,8 @@
                 android:layout_gravity="center"
                 android:layout_marginEnd="10dp"
                 android:layout_marginStart="10dp"
-                android:text="%" />
+                android:text="%"
+                tools:ignore="HardcodedText" />
 
             <View
                 android:layout_height="2dp"
@@ -69,7 +71,7 @@
             android:layout_below="@+id/riskEditText"
             android:layout_marginStart="11dp"
             android:layout_marginTop="14dp"
-            android:text="Rational Stop Loss (SL)" />
+            android:text="@string/rational_stop_loss_sl" />
 
         <TextView
             android:id="@+id/textView2"
@@ -78,7 +80,7 @@
             android:layout_alignStart="@+id/textView"
             android:layout_below="@+id/textView"
             android:layout_marginTop="23dp"
-            android:text="ATR (13)" />
+            android:text="@string/atr_13" />
 
         <EditText
             android:id="@+id/atrEditText"
@@ -90,24 +92,17 @@
             android:layout_toEndOf="@+id/textView2"
             android:width="100dp"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            tools:ignore="LabelFor" />
 
         <TextView
             android:id="@+id/slTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/textView2"
-            android:layout_below="@+id/atrEditText"
-            android:layout_marginStart="37dp"
             android:layout_marginTop="35dp"
-            android:text="Your SL (in ticks)" />
-
-        <TextView
-            android:id="@+id/viewSlTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/slTextView"
-            android:layout_toEndOf="@+id/riskEditText" />
+            android:text="@string/your_sl_in_ticks"
+            android:layout_below="@+id/atrEditText"
+            android:layout_alignStart="@+id/valueTextView" />
 
         <TextView
             android:id="@+id/valueTextView"
@@ -116,7 +111,7 @@
             android:layout_alignStart="@+id/textView2"
             android:layout_below="@+id/slTextView"
             android:layout_marginTop="27dp"
-            android:text="Value of 1 tic" />
+            android:text="@string/value_of_1_tic" />
 
         <EditText
             android:id="@+id/valueOfTickEditText"
@@ -128,7 +123,8 @@
             android:layout_toEndOf="@+id/valueTextView"
             android:width="100dp"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            tools:ignore="LabelFor" />
 
         <TextView
             android:id="@+id/textView7"
@@ -137,7 +133,7 @@
             android:layout_alignStart="@+id/valueTextView"
             android:layout_below="@+id/valueOfTickEditText"
             android:layout_marginTop="43dp"
-            android:text="Your position size" />
+            android:text="@string/your_position_size" />
 
         <TextView
             android:id="@+id/textView8"
@@ -154,7 +150,7 @@
             android:layout_alignTop="@+id/textView8"
             android:layout_marginStart="34dp"
             android:layout_toEndOf="@+id/valueOfTickEditText"
-            android:text="contracts" />
+            android:text="@string/contracts" />
 
         <Button
             android:id="@+id/calculatingButton"
@@ -164,7 +160,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="33dp"
             android:onClick="calculating"
-            android:text="calculating" />
+            android:text="@string/calculating" />
 
         <TextView
             android:id="@+id/stopTextView"
@@ -180,7 +176,7 @@
             android:layout_alignBottom="@+id/stopTextView"
             android:layout_alignStart="@+id/textView9"
             android:layout_marginStart="20dp"
-            android:text="points" />
+            android:text="@string/points" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
