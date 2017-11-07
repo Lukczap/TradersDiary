@@ -22,7 +22,7 @@
             android:width="150dp"
             android:ems="10"
             android:hint="@string/account_size"
-            android:inputType="number" />
+            android:inputType="numberDecimal"/>
 
         <EditText
             android:id="@+id/riskEditText"
@@ -34,7 +34,7 @@
             android:width="150dp"
             android:ems="10"
             android:hint="@string/risk"
-            android:inputType="number" />
+            android:inputType="numberDecimal" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -92,7 +92,7 @@
             android:layout_toEndOf="@+id/textView2"
             android:width="100dp"
             android:ems="10"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             tools:ignore="LabelFor" />
 
         <TextView
@@ -123,7 +123,7 @@
             android:layout_toEndOf="@+id/valueTextView"
             android:width="100dp"
             android:ems="10"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             tools:ignore="LabelFor" />
 
         <TextView
