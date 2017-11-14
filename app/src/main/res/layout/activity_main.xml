@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="tradersdiary.lukapplication.tradersdiary.MainActivity">
 
-    <RelativeLayout
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
-
         <Button
-            android:id="@+id/ObservationButton"
+            android:id="@+id/observationButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/PositionSizeButton"
-            android:layout_below="@+id/PositionNoteButton"
+            android:layout_alignEnd="@+id/positionSizeButton"
+            android:layout_below="@+id/positionNoteButton"
             android:layout_marginTop="20dp"
             android:width="200dp"
             android:text="Observation"
@@ -25,10 +18,10 @@
             tools:layout_editor_absoluteY="177dp" />
 
         <Button
-            android:id="@+id/PositionNoteButton"
+            android:id="@+id/positionNoteButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/PositionSizeButton"
+            android:layout_below="@+id/positionSizeButton"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:width="200dp"
@@ -37,7 +30,7 @@
             tools:layout_editor_absoluteY="82dp" />
 
         <Button
-            android:id="@+id/PositionSizeButton"
+            android:id="@+id/positionSizeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -48,6 +41,16 @@
             android:text="Position Size"
             tools:layout_editor_absoluteX="38dp"
             tools:layout_editor_absoluteY="82dp" />
-    </RelativeLayout>
 
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="logout" />
+
+</RelativeLayout>
+
+

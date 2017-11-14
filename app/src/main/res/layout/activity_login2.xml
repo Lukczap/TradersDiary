@@ -3,33 +3,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="tradersdiary.lukapplication.tradersdiary.Login">
+    tools:context="tradersdiary.lukapplication.tradersdiary.Login2">
 
 
-        <ImageView
-            android:id="@+id/wallstreet"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/wallstreet"
-            android:scaleType="centerCrop"
-            android:contentDescription=""
-            tools:ignore="ContentDescription" />
+    <ImageView
+        android:id="@+id/wallstreet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wallstreet"
+        android:scaleType="centerCrop"
+        android:contentDescription=""
+        tools:ignore="ContentDescription" />
 
-        <EditText
-            android:id="@+id/passwordEditText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="213dp"
-            android:ems="10"
-            android:hint="password"
-            android:gravity="center_horizontal"
-            android:inputType="textPassword"
-            android:backgroundTint="@android:color/background_light"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
-            android:textColorHint="@android:color/background_light"
-            tools:ignore="HardcodedText" />
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="213dp"
+        android:ems="10"
+        android:hint="password"
+        android:gravity="center_horizontal"
+        android:inputType="textPassword"
+        android:backgroundTint="@android:color/background_light"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHint="@android:color/background_light"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/loginEditText"
@@ -73,6 +73,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:text="create account" />
+
 
 </RelativeLayout>
 
