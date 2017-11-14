@@ -32,7 +32,7 @@
             tools:ignore="HardcodedText" />
 
     <EditText
-        android:id="@+id/loginEditText"
+        android:id="@+id/usernameEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/passwordEditText"
@@ -43,8 +43,8 @@
         android:gravity="center_horizontal"
         android:hint="username"
         android:inputType="textPersonName"
-        android:textColorHint="@android:color/background_light"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHint="@android:color/background_light"
         tools:ignore="HardcodedText" />
 
     <Button
